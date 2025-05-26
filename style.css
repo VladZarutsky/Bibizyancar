@@ -1,0 +1,14 @@
+scroll-slider-track{
+	display: flex;
+	overflow-x: auto;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+
+	scroll-snap-type: x mandatory;
+}
+scroll-slider-track::-webkit-scrollbar{
+	display: none;
+}
+scroll-slider-track > * {
+	scroll-snap-align: center;
+}
